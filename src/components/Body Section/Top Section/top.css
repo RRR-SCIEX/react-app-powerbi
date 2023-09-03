@@ -1,0 +1,28 @@
+.topSection .hederSection {
+  justify-content: space-between;
+}
+.topSection .hederSection .title h1 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+}
+.topSection .hederSection .title p {
+  font-size: 0.938rem;
+  color: gray;
+  font-weight: 500;
+}
+.topSection .hederSection .adminDiv {
+  gap: 1rem;
+}
+.topSection .hederSection .adminDiv .adminImge {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px gray;
+}
+.topSection .hederSection .adminDiv .adminImge img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}/*# sourceMappingURL=top.css.map */

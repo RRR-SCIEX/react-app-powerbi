@@ -1,0 +1,36 @@
+.topSection{
+.hederSection{
+    justify-content: space-between;
+
+    .title{
+    h1{
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 700;
+    }
+    p{
+        font-size: .938rem;
+        color: gray;
+        font-weight: 500;
+    }
+    }
+    .adminDiv{
+       gap: 1rem;
+       .adminImge{
+        border:3px solid white ;
+        border-radius: 10px;
+        width: 2.5rem;
+        overflow: hidden;
+        box-shadow: 0 2px 4px gray;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+       }
+    }
+}
+
+
+}
