@@ -1,0 +1,46 @@
+.section {
+    position: fixed;
+    background-color: #000000d7;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10002;
+}
+
+.form {
+    background-color: var(--color-light-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.form > div:not(:nth-child(1)) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.form > div input {
+    padding: 1rem;
+    outline: none;
+    border: 1px solid var(--color-dark-2);
+    border-radius: 0.5rem;
+}
+
+.form > p:nth-of-type(1) {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem;
+}

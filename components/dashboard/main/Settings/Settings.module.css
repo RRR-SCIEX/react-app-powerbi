@@ -1,0 +1,204 @@
+.section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: calc(100vh - 3rem);
+}
+.section > div.head {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding:  24px 12px 24px;
+
+}
+
+.detailsOrderByDate {
+    padding: 12px 24px 12px 24px ;
+   
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 1px solid var(--neutral-gray-gray-50, #F0F1F3);
+    background: var(--neutral-white, #FFF);
+    box-shadow: 0px 4px 30px 0px rgba(131, 98, 234, 0.05);
+}
+
+.detailsOrderByDate > div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.detailsOrderByDate span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+.detailsOrderByDate > div:nth-of-type(1) input {
+    background-color: var(--color-dark-1);
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.section > div.head > div {
+    width: 100%;
+    height: 100%;
+    
+    font-size: 2rem;
+
+}
+
+.head .numOrder {
+    font-size: 3rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.upTable {
+    margin: 1rem;
+   
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+      margin-top: -15px;
+
+}
+
+.upTable .head,
+.upTable .body {
+    font-size: 1.5rem;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+    color: var(--color-light-2);
+    justify-content: space-around;
+}
+.section{
+    padding: 16px 24px 16px 24px;
+}
+.upTable .head {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.pagination{
+    padding: 1rem;
+}
+
+.pagination button {
+    background-color:var(--color-dark-1);
+    color: var(--color-light-1);
+    font-size: 1.3rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.pagination button:hover{
+    color: #000000;
+}
+.matrix{
+    background-color: rgb(255, 252, 252);
+    color: #000;
+    width: 500px;
+    display: flex;
+
+
+}
+.chart{
+    display: flex;
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+.App {
+    text-align: center;
+    padding: 0px 0 16px 0;
+   
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Add background color */
+    padding: 0px 20px 16px 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.07px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row; /* Set options to horizontal layout */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.07px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-gray-gray-100, #e0e2e7);
+}
+
+.options ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Display options horizontally */
+
+    padding: 6px 12px;
+}
+
+.options li {
+    margin-right: 20px; /* Add spacing between options */
+    cursor: pointer;
+    background-color: white;
+}
+
+.inputs {
+    padding: 6px 12px;
+
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.07px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-gray-gray-100, #e0e2e7);
+}
+
+.inputs input {
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-gray-gray-100, #e0e2e7);
+}
+
+/* Add more styling as needed */

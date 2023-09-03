@@ -1,0 +1,15 @@
+.section{
+   
+    color: var(--color-dark-4);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+    height: calc(100vh - 3rem);
+}
+
+.head{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 2rem 0 0 2rem;
+}

@@ -1,0 +1,275 @@
+.section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.static,
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 1rem;
+    padding: 2rem;
+}
+
+.static > div,
+.list > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--color-dark-6);
+    border-radius: 1.5rem;
+    font-size: 2rem;
+}
+
+.static > div .img,
+.list > div .img {
+    background-color: var(--color-dark-4);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    color: var(--color-light-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.static > div .text > p:nth-of-type(1),
+.list > div .text > p:nth-of-type(1) {
+    color: var(--color-light-3);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+.static > div .text > p:nth-of-type(2),
+.list > div .text > p:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+/* ---------------custom list style */
+.list > div {
+    padding: 0.5rem 0.8rem;
+    border-color: var(--color-dark-5);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.list > div .text > p:nth-of-type(1) {
+    color: var(--color-dark-6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.list > div .img {
+    background-color: var(--color-light-1);
+    color: var(--color-dark-1);
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+}
+
+.static > div .text > p span:nth-of-type(1).small {
+    font-size: 2.7rem;
+}
+
+.static > div .text > p span:nth-of-type(2) {
+    font-size: 1.6rem;
+}
+
+span.green {
+    color: var(--color-main-1);
+}
+
+span.red {
+    color: var(--color-red-1);
+}
+.part2 {
+    padding: 1rem;
+    background-color: #f1f3f4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+/* ----------------------------- */
+.part2 .charts {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+    background-color: var(--color-light-1);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow-1);
+    overflow: hidden;
+}
+
+.part2 .charts > .head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-dark-4);
+    color: var(--color-light-1);
+    padding: 1rem;
+}
+
+.divUpForCharts {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.part2 .charts > div .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part2 .charts > div .head p {
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.part2 .charts > div .head span img{
+    width: 2.5rem;
+}
+
+.part2 .charts > div .head select {
+    background-color: var(--color-dark-1);
+    color: var(--color-light-1);
+    font-size: 1.5rem;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid var(--color-dark-5);
+    border-radius: 0.5rem;
+}
+
+.divChartWithDetails {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.divChartWithDetails .text {
+    background: #000000;
+    background: -webkit-linear-gradient(
+        141deg,
+        #000000 0%,
+        #000000 50%,
+        #3c3c3c 100%
+    );
+    background: linear-gradient(141deg, #000000 0%, #000000 50%, #3c3c3c 100%);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--color-light-1);
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow-1);
+}
+
+.divChartWithDetails .text .num {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #818181;
+    text-align: center;
+}
+
+.divChartWithDetails .text .num span {
+    font-size: 3rem;
+}
+.divChartWithDetails .text .per {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.divChartWithDetails .text .per span {
+    font-size: 1.5rem;
+}
+/* ------------------------------- */
+.list {
+    background-color: var(--color-dark-4);
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+/* ------------------------------- */
+.part2 > div:nth-of-type(2) {
+    background-color: var(--color-light-1);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: var(--box-shadow-1);
+    overflow: hidden;
+}
+
+.head {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--color-light-1);
+}
+
+.part2 > div:nth-of-type(2) .head {
+    background-color: var(--color-dark-4);
+    padding: 1rem;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--color-dark-6);
+    position: relative;
+    margin: 0 1rem;
+}
+
+.note .imgNote {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-dark-4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light-1);
+    font-size: 2.5rem;
+}
+
+.note .alert {
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-red-1);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    animation: soon2 1.2s infinite;
+}
+
+@keyframes soon2 {
+    0% {
+    }
+
+    50% {
+        filter: drop-shadow(0 0 5px var(--color-red-1))
+            drop-shadow(0 0 5px var(--color-red-1));
+        -webkit-filter: drop-shadow(0 0 5px var(--color-red-1))
+            drop-shadow(0 0 5px var(--color-red-1));
+    }
+    100% {
+    }
+}
